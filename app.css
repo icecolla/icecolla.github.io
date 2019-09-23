@@ -1,6 +1,6 @@
 body {
   margin: 0 auto;
-  font-family: sans-serif;
+  font-family: rubik-mono-one;
   text-align: center;
   /*overflow: visible;*/
   /*background: linear-gradient(#e66465, #9198e5);*/
@@ -9,45 +9,39 @@ body {
               /*linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);*/
 }
 
-
-/*h1 {
-  margin: 0;
-  font-family: 'Lato', sans-serif;
-  font-weight:300;
-  letter-spacing: 2px;
-  font-size:48px;
-}*/
-
 h1 {
+  font-family: rubik-mono-one;
+  letter-spacing: 4.2px;
   text-align: center;
-  margin: 50px auto;
-  font-size: 1.5rem;
-  font-family: 'Lato', sans-serif;
-  font-weight: 1;
-  color: transparent;
-  overflow: hidden;
-  background: linear-gradient(45deg, black 30%, transparent 30%, transparent 70%, black 70%), linear-gradient(-45deg, black 30%, transparent 30%, transparent 70%, black 70%), linear-gradient(90deg, crimson 30%, transparent 30%, transparent 70%, crimson 70%)red;
-  background-size: 10px 10px, 10px 10px, 1px 1px;
-  background-position: 0 0, 0 0, 0 0;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 1px white;
-  filter: drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px black)drop-shadow(0 0 1px crimson);
-  animation: bg-shift 1s ease-in-out infinite alternate-reverse, swing 2s ease-in-out infinite;
-}
-
-h1::before {
-  /*content: "ohoh";*/
-  /*position: absolute;
-  background: linear-gradient(transparent 30%, white, transparent 70%);
-  -webkit-background-clip: text;
-  animation: bg-shift2 2s ease-in-out infinite alternate-reverse;
-  -webkit-text-stroke: 2px red;*/
+  margin: 42px auto;
+  font-size: 2rem;
+  font-weight: 2;
+  /*color: transparent;*/
+  /*overflow: hidden;*/
+  /*background: linear-gradient(45deg, black 30%, transparent 30%, transparent 70%, black 70%), */
+              /*linear-gradient(-45deg, black 30%, transparent 30%, transparent 70%, black 70%), */
+              /*linear-gradient(90deg, crimson 30%, transparent 30%, transparent 70%, crimson 70%)red;*/
+  /*background-size: 10px 10px, 10px 10px, 1px 1px;*/
+  /*background-position: 0 0, 0 0, 0 0;*/
+  /*-webkit-background-clip: text;*/
+  /*-webkit-text-stroke: .5px white;*/
+/*  filter: drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px black)
+          drop-shadow(0 0 1px crimson);*/
+  animation: bg-shift 1s ease-in-out infinite alternate-reverse, 
+             swing 2s ease-in-out infinite;
 }
 
 p {
-  font-family: 'Lato', sans-serif;
+  font-family: rubik-mono-one;
   letter-spacing: 1px;
-  font-size:14px;
+  font-size:16px;
   color: #333333;
 }
 
@@ -58,15 +52,16 @@ hr {
 .container {
   margin: 0 auto;
   max-width: 720px;
-  background: #fff, transparent;
+  background: #fff, .1;
   padding: 24px;
 }
 
 .content.hidden {
   display: none;
   transition-duration: 3s;
-}
+  background: #fff, .1;
 
+}
 
 .header {
   position:relative;
@@ -76,16 +71,15 @@ hr {
             /*linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 30.71%),*/
             /*linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 30.71%),*/
             /*linear-gradient(36deg, rgba(0,0,255,.8), rgba(0,0,255,0) 10.71%)*/
-
   color:white;
 }
 
-.inner-header {
+/*.inner-header {
   height:65vh;
   width:100%;
   margin: 0;
   padding: 0;
-}
+}*/
 
 .flex { /*Flexbox for containers*/
   display: flex;
@@ -107,8 +101,7 @@ hr {
   position:relative;
   height:20vh;
   text-align:center;
-  background-color: white;
-  /*opacity: .8;*/
+  background-color: rgba(255);
 }
 
 /* Animation */
